@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+.container {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-area {
+    width: 40rem;
+    min-height: 50rem;
+    padding: 1rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.5);
+    background-color: whitesmoke;
+}
+
+.title {
+    border-bottom: 0.2rem solid black;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.form-input, .form-btn {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+.form-input {
+    width: 100%;
+    font-size: 1.4rem;
+    outline: none;
+}
+
+.form-btn {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: .1rem;
+}
+
+.form-btn:hover {
+    background-color: darkgray;
+}
+
+.list {
+    list-style: none;
+    margin: 0 .4rem;
+}
+
+.task {
+    background-color: lightgray;
+    padding: .5rem;
+    border-radius: .5rem;
+    margin-bottom: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-content {
+    font-size: 1.8rem;
+}
+
+.btn-delete {
+    margin-left: .3rem;
+}
+
+.btn-task-done, .btn-delete {
+    border-radius: 0.5rem;
+    padding: .7rem;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: .2rem;
+}
+
+.btn-task-done:hover, .btn-delete:hover {
+    font-weight: bold;
+    letter-spacing: .1rem;
+}
+
+.btn-task-done:hover {
+    color: darkgreen;
+    background-color: lightgreen;
+}
+
+.btn-delete:hover {
+    color: darkred;
+    background-color: lightcoral;
+}
+
+.done {
+    text-decoration: line-through;
+    font-style: italic;
+    background-color: rgb(125, 125, 125);
+    color:lightgrey;
+}
+
+.done .btn-task-done {
+    background-color: rgb(125, 125, 125);
+    border: .1rem solid black;
+}
